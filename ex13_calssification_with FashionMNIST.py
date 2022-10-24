@@ -118,7 +118,7 @@ for t in range(epochs):
 print("Done!")
 
 # 第7步：保存模型
-torch.save(model.state_dict(), "../pythonProject3/model.pth")
+torch.save(model.state_dict(), "model.pth")
 print("Saved PyTorch Model State to model.pth")
 
 # 第8步：加载模型

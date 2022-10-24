@@ -40,8 +40,8 @@ if torch.cuda.is_available():
 tensor2= tensor * tensor # 在CPU上进行运算。
 
 # 下面代码只能在GPU的机器上运行
-tensor2_gpu= tensor_gpu * tensor_gpu # 在GPU上进行运算。按元素相乘。
-tensor2_gpu = tensor_gpu.matmul(tensor_gpu.T)  # 在GPU上进行运算。矩阵乘法。
+# tensor2_gpu= tensor_gpu * tensor_gpu # 在GPU上进行运算。按元素相乘。
+# tensor2_gpu = tensor_gpu.matmul(tensor_gpu.T)  # 在GPU上进行运算。矩阵乘法。
 
 # 当Tensor对象在CPU中时，可以起一个别名，当做Numpy的多维数组，贡献数据。也就是支持Numpy多维数组的各种操作。
 t = torch.ones(5)

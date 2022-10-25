@@ -18,6 +18,8 @@ Tensor对象的数据和代码，既可以在mem中，也可以在GPU上，需�
 ③ 一般不能靠=完成对象的初始化。一般靠构造函数，专用函数！！！
 ④ndarray和Tensor可以桥接
 
+https://dataflowr.github.io/website/modules/4-optimization-for-deep-learning/
+
 """
 
 # 1）Python基本的矩阵。支持+-*。存于CPU的Mem

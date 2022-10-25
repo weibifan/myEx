@@ -1,2 +1,2 @@
-# myEx
-自己的一些小练习
+# myPyTorchEx
+PyTorch的小练习

@@ -5,6 +5,10 @@
 # 当在CPU上学习时，DataLoader的num_workers 只能设置为0，表示只用主进程访问数据。
 
 # PyTorch model and training necessities
+'''
+https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html
+
+'''
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

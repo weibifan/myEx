@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # weibifan 2022-10-12
 #  文本处理的标准层：嵌入层（embedding），分为词向量，句子向量。
-
+#  比图像复杂原因：①需要分词，图像是像素。②将token转换为数值。③句子长度可变。
 '''
 嵌入（nn.Embedding ）包括word vector和sentence vector。默认是词向量。
 

@@ -4,6 +4,7 @@
 #  TorchText 及 分类模型 'C:\\Users\\Wei/.cache\\torch\\text\\datasets\\AG_NEWS'
 # 第2种方法：继承nn.Module构建模型类。
 '''
+https://pytorch.org/tutorials/beginner/text_sentiment_ngrams_tutorial.html
 中文版tutorial：https://pytorch.apachecn.org/#/docs/1.7/31
 
 文本分类数据集：
@@ -58,6 +59,7 @@ from torchtext.datasets import AG_NEWS
 from torch.utils.data import DataLoader
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print('The code runs in ',device)
 
 from torchtext.data.utils import get_tokenizer
 from torchtext.vocab import build_vocab_from_iterator

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # weibifan 2022-10-2, 2022-10-12
 #  模型的加载，使用，保存  --- 类似于数据集的加载，使用，保存
-#
+# https://pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html
 
 '''
 '''
@@ -14,7 +14,7 @@ from torchvision.models import VGG16_Weights
 model = models.vgg16(weights=VGG16_Weights.DEFAULT)
 
 # 保存参数
-torch.save(model.state_dict(), '../pythonProject3/model_weights.pth')
+torch.save(model.state_dict(), '../model/model_weights.pth')
 
 # 加载模型，没有参数
 model = models.vgg16() # we do not specify pretrained=True, i.e. do not load default weights
@@ -25,5 +25,5 @@ model.eval()
 
 
 #另外一种方法：
-torch.save(model, '../pythonProject3/model.pth')
+torch.save(model, '../model/model.pth')
 model = torch.load('model.pth')

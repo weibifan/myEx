@@ -3,6 +3,7 @@
 #  多项式拟合，手工计算，不要torch
 
 '''
+https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
 
 第1步：准备训练数据。包括两部分，输入数据和预期输出。
 

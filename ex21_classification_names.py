@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # weibifan 2022-10-3
-#  文本处理技巧及RNN使用
+#  文本分类：Char-RNN
 
 '''
 https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html
@@ -17,7 +17,6 @@ import os
 
 
 def findFiles(path): return glob.glob(path)
-
 
 print(findFiles('data/names/*.txt'))
 
@@ -62,7 +61,6 @@ n_categories = len(all_categories)
 # Turning Names into Tensors
 # ======================================================
 import torch
-
 
 # Find letter index from all_letters, e.g. "a" = 0
 def letterToIndex(letter):

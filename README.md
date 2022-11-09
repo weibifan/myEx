@@ -1,6 +1,10 @@
 ### myPyTorchEx
-PyTorch的小练习
+PyTorch的小练习   
+https://github.com/pytorch/examples
 
+### PyTorch-Ignite: PyTorch的扩展，回调函数方式
+https://pytorch.org/ignite/   
+https://github.com/pytorch/ignite/tree/master/examples
 
 ### HuggingFace：PyTorch的扩展
 类似于TensorFlow的Keras。  
@@ -8,4 +12,22 @@ PyTorch的小练习
 
 ### Lightning：PyTorch的扩展
 类似于TensorFlow的Keras。这个代码包变成商业产品，估计开源将无人维护了。 lightning AI  
+
+### FastAI: PyTorch的扩展
+
+
+https://github.com/catalyst-team/catalyst
+
+### 阿里的PyTorch库，含大量中文数据集及模型
+ModelScope：专门用于预训练语言模型，https://www.modelscope.cn/home  
+EasyNLP：https://github.com/alibaba/EasyNLP  
+https://www.yuque.com/easyx  
+
+### 百度的PaddlePaddle，含大量中文数据集及模型
+非PyTorch体系。  详见myPaddleEx工程。
+
+### 腾讯，美团，字节跳动等
+
+
+
 

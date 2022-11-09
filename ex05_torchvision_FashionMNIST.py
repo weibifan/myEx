@@ -4,6 +4,14 @@
 # 图像数据的案例：图像的显示
 
 """
+图像数据集的预处理：torchvision.transforms
+
+0）将narray数据转换为tensor，使用ToTensor()
+1）归一化，Normalize()
+3）图像数据的平坦化，Flat()
+
+*）多个预步骤需要使用Compose，lambda，或者转换函数。
+
 The FashionMNIST features are in PIL Image format, and the labels are integers.
 """
 

@@ -15,6 +15,8 @@ Windows下一个东西在Linux会是N个， 所以：toolschain的概念。开�
 
 了解系统基本信息：如何查看Linux的版本，查看使用哪个shell及版本，Linux环境变量。env，printenv，etc/profile，uname -r。
 
+sudo mv index.php index2.html 
+
 rpm -ivh 安装软件。rpm -qa |grep xxx rpm -e xxx。同样一个软件在不同系统中大小写不一致。vmliunz--内核。
 dmesg | more是启动信息。rc rc.d目录。 modrobe,insmod,modinfo,rmmod，Lsmod。
 
@@ -70,13 +72,18 @@ n 在同一方向重复上一次搜索命令。N：在反方向上重复上一�
 wget只用于下载，可以递归下载目录。  
 curl主要用于通过url交互。可以进行下载，但是不支持递归下载。
 
+
+### 运行环境：LNMP，LAMP
+https://oneinstack.com/docs/lnmp
+
+MySQL的管理器：PhpMyAdmin   
+phpmyadmin/config.inc.php  
+将config.sample.inc.php改成config.inc.php  
+$cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
+
+
 ### 其他问题：
 
 Your CPU does not support long mode, use a 32bit distribution.   
 F10进BIOS. 开启VT：Security -> System Security -> enable VT
 
-
-安装PhpMyAdmin   
-phpmyadmin/config.inc.php  
-将config.sample.inc.php改成config.inc.php  
-$cfg['Servers'][$i]['AllowNoPassword'] = TRUE;

@@ -10,6 +10,16 @@ array是矩阵，除了增删改查外，还支持+-*/，矩阵乘法，矩阵�
 类似的还有PyTorch的Tensor。TensorFlow的Tensor。
 
 Java语言里面，int类型和Integer类型。
+
+NumPy是一个定义了数值数组和矩阵类型和它们的基本运算的语言扩展。
+SciPy是另一种使用NumPy来做高等数学、信号处理、优化、统计和许多其它科学任务的语言扩展。
+
+
+numpy.array 重载了Python标准的array(严格来说是std.array)，是一个简单扩展。
+比如通过[]生成的是标准array。
+由numpy.arange生成的是numpy.array
+由range生成的就是std.array
+当使用from numpy import *时，array()方法就会被重载。
 '''
 
 # =======================================================

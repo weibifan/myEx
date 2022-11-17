@@ -27,11 +27,17 @@ https://www.yuque.com/easyx
 非PyTorch体系。  详见myPaddleEx工程。
 
 ### 腾讯，美团，字节跳动等
+好未来：面向教育，比如公式识别，试题题型分析等，https://ai.100tal.com/
+
 
 ### 在线开发平台
 GitHub Codespaces：https://docs.github.com/en/codespaces/overview  
 JetBrains Spaces：  
 ModelScope创空间：  
+HuggingFace Space：  免费部署自己的模型。
+
+
+
 
 
 

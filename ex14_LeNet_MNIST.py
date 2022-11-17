@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # weibifan 2022-10-7
 # 图像分类案例：LeNet + MNIST
+
+# 基于以下代码进行注释
 # https://github.com/zergtant/pytorch-handbook/blob/master/chapter3/3.2-mnist.ipynb
 
 import torch
@@ -9,13 +11,16 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
-print(torch.__version__)
+print('Torch version: ', torch.__version__)
+
+# 让torch判断是否使用GPU，建议使用GPU环境，因为会快很多
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print('Suing: ', DEVICE)
 
 BATCH_SIZE = 512  # 大概需要2G的显存
 EPOCHS = 20  # 总共训练批次
-# 让torch判断是否使用GPU，建议使用GPU环境，因为会快很多
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+# 使用全部数据做训练和测试，并没有进行split
 train_loader =DataLoader(
     datasets.MNIST('data', train=True, download=True,
                    transform=transforms.Compose([

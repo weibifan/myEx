@@ -2,7 +2,6 @@
 # weibifan 2022-10-5
 # 英文问答系统
 
-
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 
 model_name = "deepset/roberta-base-squad2"

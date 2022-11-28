@@ -3,6 +3,7 @@
 # 介绍Huggingface的数据集  https://huggingface.co/docs/datasets/load_hub
 '''
 数据集位置：https://huggingface.co/datasets
+
 '''
 from datasets import load_dataset
 
@@ -38,3 +39,7 @@ print(data['train'][0])  # 显示数据集元数据
 '''
 C:/Users/Wei/.cache/huggingface/datasets/GEM___fairytale_qa/default/1.0.0/915cb13387fb0028e0fd29b7f156905e3afb99ba1d58c88d6c54a4e550c8678b.
 '''
+
+#  将数据集保存到指定目录，从指定目录加载数据集
+dataset.save_to_disk('C:/data')
+dataset2 = datasets.load_from_disk("C:/data")

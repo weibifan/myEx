@@ -2,7 +2,7 @@
 # weibifan 2022-10-3
 # Tensor类及对象说明。需要显式将Tensor对象搬迁到GPU的Mem中。
 # Tensor封装各种基本类型，比如int，float，string，矩阵等等。
-
+# cuda 与 cpu的差别及使用方法
 
 import torch
 import numpy as np

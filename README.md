@@ -37,6 +37,13 @@ ModelScope创空间：
 HuggingFace Space：  免费部署自己的模型。
 
 
+### 其他
+import cv2   实际上需要 pip opencv-python 即可
+
+requirements和setup.py
+
+
+
 
 
 

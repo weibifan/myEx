@@ -2,6 +2,7 @@
 先关掉防火墙及SELinux。
 
 
+
 ### 开源与免费  主要是一种做事的思路，不仅仅是技术。
 开源不一定免费，免费不一定开源。没有在现实社会中PK，很多风险是不知道的，开源一般是有版权的。优先使用开源软件的衍生软件，那个稳定使用哪个。一般情况最好不要使用开源软件，科研一般用开源。充分使用官方资源。  
 缺少统一的标准；应用不稳定，兼容性不好，版本变化太快。  
@@ -86,4 +87,6 @@ $cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
 
 Your CPU does not support long mode, use a 32bit distribution.   
 F10进BIOS. 开启VT：Security -> System Security -> enable VT
+
+git子模块是为一个Git仓库中添加其他Git 仓库
 

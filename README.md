@@ -9,6 +9,8 @@ https://github.com/pytorch/ignite/tree/master/examples
 ### HuggingFace：PyTorch的扩展
 类似于TensorFlow的Keras。  
 
+#### Facebook的扩展库：Fairseq
+
 
 ### Lightning：PyTorch的扩展
 类似于TensorFlow的Keras。这个代码包变成商业产品，估计开源将无人维护了。 lightning AI  
@@ -28,6 +30,11 @@ https://www.yuque.com/easyx
 
 ### 腾讯，美团，字节跳动等
 好未来：面向教育，比如公式识别，试题题型分析等，https://ai.100tal.com/
+
+### 模型作为服务：WebAPI
+百度：
+阿里：
+OpenAI：
 
 
 ### 在线开发平台

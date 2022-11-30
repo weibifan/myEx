@@ -1,7 +1,13 @@
 
 先关掉防火墙及SELinux。
 
+### Win平台的GCC工具链 --- 有些Linux下的工具没有Windows版
+1）安装Microsoft WSL2（Linux子环境），然后在WSL2中安装GCC工具链。
+2）安装MSYS2，Win平台的模拟Linux，可以安装GCC工具链，称为 msys2-devel。
+3）安装MinGW，Windows平台的GCC工具链。
+使用 mingw-gcc 编译的目标文件是原生的，而使用 msys2-gcc 编译的目标文件依赖于 msys-2.0.dll 提供的虚拟 POSIX 环境。如果你要编译的东西强依赖于 POSIX syscall (比如 fork 等)，那么就要用 MSYS2 的 gcc。而如果是要当做一个 release 拿去给别人用的，用 MinGW 的 gcc 好些。当然，事情也不绝对，对于前者你也可以给源文件 patch 一个 MinGW 移植，对于后者也可以用 MSYS2 然后附带上 msys-2.0.dll。根据我自己的经验，如果你使用目标文件的环境就是 MSYS2 的话，用 MSYS2 工具链编译的程序要比 MinGW 工具链的稳定一些(对 ruby, python 等工具而言)。
 
+案例：Facebook fairseq包默认只有Linux版
 
 ### 开源与免费  主要是一种做事的思路，不仅仅是技术。
 开源不一定免费，免费不一定开源。没有在现实社会中PK，很多风险是不知道的，开源一般是有版权的。优先使用开源软件的衍生软件，那个稳定使用哪个。一般情况最好不要使用开源软件，科研一般用开源。充分使用官方资源。  
